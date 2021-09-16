@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import Layout from './views/layout/layout'; 
 const ProductList = lazy(() => import('./views/pages/productList'));
 const ProductHistory = lazy(() => import('./views/pages/productHistory'));
+const AddProduct = lazy(() => import('./views/pages/addProduct'));
 
 class AppRouter extends React.Component {
  
@@ -17,6 +18,7 @@ class AppRouter extends React.Component {
                     <Layout>
                     <Route exact path="/" component={ProductList}    />
                     <Route exact path="/productHistory" component={ProductHistory}   />
+                    <Route exact path="/addProduct" component={AddProduct}   />
                     </Layout>
                 </Switch>
             </Router>
