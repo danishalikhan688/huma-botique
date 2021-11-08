@@ -52,6 +52,12 @@ class Sidebar extends Component {
                 </Link>
             </li>
             <li className="nav-item">
+            <Link to="/cost-calculator"  className="nav-link" >
+                <i className="material-icons">content_paste</i>
+                <p> Cost Calculaor      </p>
+                </Link>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" href="./typography.html">
                 <i className="material-icons">library_books</i>
                 <p>addProduct</p>

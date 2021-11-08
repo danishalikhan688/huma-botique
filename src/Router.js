@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 // import './assets/scss/plugins/extensions/toastr.scss';
 import { connect } from 'react-redux';
 import Layout from './views/layout/layout'; 
+import CostCalculator from './views/pages/costCalculator';
 const ProductList = lazy(() => import('./views/pages/productList'));
 const ProductHistory = lazy(() => import('./views/pages/productHistory'));
 const AddProduct = lazy(() => import('./views/pages/addProduct'));
@@ -19,6 +20,7 @@ class AppRouter extends React.Component {
                     <Route exact path="/" component={ProductList}    />
                     <Route exact path="/productHistory" component={ProductHistory}   />
                     <Route exact path="/addProduct" component={AddProduct}   />
+                    <Route exact path="/cost-calculator" component={CostCalculator}   />
                     </Layout>
                 </Switch>
             </Router>
